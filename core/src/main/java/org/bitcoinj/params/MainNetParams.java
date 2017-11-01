@@ -37,8 +37,8 @@ public class MainNetParams extends AbstractBitcoinNetParams {
         interval = INTERVAL;
         targetTimespan = TARGET_TIMESPAN;
         maxTarget = Utils.decodeCompactBits(0x1d00ffffL);
-        dumpedPrivateKeyHeader = 128;
-        addressHeader = 0;
+        dumpedPrivateKeyHeader = 176; // 128 --> 176 for Litecoin
+        addressHeader = 48; // 0 --> 48 for Litecoin
         p2shHeader = 5;
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         port = 8333;
